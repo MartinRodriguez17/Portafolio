@@ -1,0 +1,59 @@
+html{
+    font-size: 16px;
+}
+/*voy a usar mediasquery para hacer adaptable la letra aun dispositivo diferente*/
+@media screen and(mas-whidth: 400px){
+    html{
+    font-size: 9.9411764705882353px;
+    }
+}
+html,body{
+    height: 100%;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.384);
+    font-family: "Silkscreen" ;
+    font-size: 1.7rem; /*muktiplica la medida padre por rem  */
+    font-style: normal;
+    font-weight: normal; /*Grosor de letra*/
+    line-height: 1.882; /* Interlineado entre filas */
+    color: rgb(255, 255, 255);
+    margin: 0; /* margen da un espacio hacia el exterior*/
+    padding: 12px; /* padding da un espacio hacia el interior de la pantalla*/
+}
+
+/*Estilos a los links*/
+a{
+    color:burlywood;
+    transition: all 0.3 ease-in-out;
+}
+
+a:hover,/*color del link*/
+a:focus,/*brillo sobre el link*/
+a:active{  /*activación*/
+    color: cyan;
+}
+
+a:hover,
+a:focus{
+    outline: o;
+}
+
+/*tipografía*/
+h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5,.h6{
+    /*font-family: "Frank Ruh1 libre", serif;*/ /*Es una fuente de destilo libre opcional */
+    font-weight: 500;
+    font-style: normal;
+    color: bisque;
+}
+
+h1, .h1, h2, .h2,h3, .h3,h4, .h4{
+    margin-top: 6rem; /*margen hacia arriba*/
+    margin-bottom: 16rem; /*margen hacia abajo*/
+}
+@media screen and (max-width: 600px){
+    h1, .h1, h2, .h2,h3, .h3,h4, .h4{
+        margin-top: 6rem; /*margen hacia arriba*/
+        margin-bottom: 16rem; /*margen hacia abajo*/
+
+}
