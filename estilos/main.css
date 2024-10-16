@@ -1,129 +1,227 @@
-html{
+html {
     font-size: 16px;
 }
+
 /*voy a usar mediasquery para hacer adaptable la letra aun dispositivo diferente*/
-@media screen and(mas-whidth: 400px){
-    html{
-    font-size: 9.9411764705882353px;
+@media screen and(mas-whidth: 400px) {
+    html {
+        font-size: 9.9411764705882353px;
     }
 }
 
-html,body{
+html,
+body {
     height: 10%;
 }
-body{
+
+body {
     background-color: rgba(0, 0, 0, 0.316);
-    font-family: "Silkscreen" ;
-    font-size: 1.7rem; /*muktiplica la medida padre por rem  */
+    font-family: "Silkscreen";
+    font-size: 1.7rem;
+    /*muktiplica la medida padre por rem  */
     font-style: normal;
-    font-weight: normal; /*Grosor de letra*/
-    line-height: 1.882; /* Interlineado entre filas */
+    font-weight: normal;
+    /*Grosor de letra*/
+    line-height: 1.882;
+    /* Interlineado entre filas */
     color: rgb(255, 255, 255);
-    margin: 0; /* margen da un espacio hacia el exterior*/
-    padding: 12px; /* padding da un espacio hacia el interior de la pantalla*/
+    margin: 0;
+    /* margen da un espacio hacia el exterior*/
+    padding: 12px;
+    /* padding da un espacio hacia el interior de la pantalla*/
 }
 
 /*Estilos a los links*/
-a{
-    color:burlywood;
+a {
+    color: red;
     transition: all 0.3 ease-in-out;
 }
 
-a:hover,/*color del link*/
-a:focus,/*brillo sobre el link*/
-a:active{  /*activación*/
+a:hover,
+/*color del link*/
+a:focus,
+/*brillo sobre el link*/
+a:active {
+    /*activación*/
     color: cyan;
 }
 
 a:hover,
-a:focus{
+a:focus {
     outline: 0;
 }
 
 /*tipografía*/
-h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5,.h6{
-    /*font-family: "Frank Ruh1 libre", serif;*/ /*Es una fuente de destilo libre opcional */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    /*font-family: "Frank Ruh1 libre", serif;*/
+    /*Es una fuente de destilo libre opcional */
     font-weight: 500;
     font-style: normal;
     color: rgb(145, 108, 64);
 }
 
-h1, .h1, h2, .h2,h3, .h3,h4, .h4{
-    margin-top: 6rem; /*margen hacia arriba*/
-    margin-bottom: 16rem; /*margen hacia abajo*/
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+    margin-top: 6rem;
+    /*margen hacia arriba*/
+    margin-bottom: 16rem;
+    /*margen hacia abajo*/
 }
-@media screen and (max-width: 600px){
-    h1, .h1, h2, .h2,h3, .h3,h4, .h4{
-        margin-top: 6rem; /*margen hacia arriba*/
-        margin-bottom: 16rem; /*margen hacia abajo*/
+
+@media screen and (max-width: 600px) {
+
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4 {
+        margin-top: 6rem;
+        /*margen hacia arriba*/
+        margin-bottom: 16rem;
+        /*margen hacia abajo*/
     }
 }
 
-h5, .h5, h6, . h6{
+h5,
+.h5,
+h6,
+.h6 {
     margin-top: 4.8rem;
     margin-bottom: 1.2rem;
 }
+
+/*TAREA 1.3======================================================================================*/
+
 /*Estilos s-header*/
-.s-header{
-    position: absolute;
-    top: 2rem;
-    margin: 0px;
-    width: 100% ;
-    border: 1px solid white; /*Borde del header*/
-    height: 78px;
-    text-align: center;
-}
-.s-header.sticky{
-    background: #050505;
-    position: fixed;
-    top: 0;
-    left: 0;
+.s-header {
+    position: absolute;/*Permite que el siguiente elemento ocupe su espacio*/
+    top: 2rem; /*margen arriba*/
+    margin: 0px; /*margen */
+    width: 100%; /*Ancho que va a ocupar del casillero*/
+    border: 1px solid white; /*Borde de la seccion*/
+    /*Borde del header*/
+    height: 78px; /*Altura de la seccion*/
+    text-align: center; /*Centrar texto*/
 }
 
-.header-logo{
-    display: inline-block;
-    margin: 6px 0 0 0;
-    position: absolute;
-    top: 50%;
-    left: 40px;
+.s-header.sticky {
+    background: #050505; /*Fondo*/
+    position: fixed; /*Position*/
+    top: 0; /*margen arriba*/
+    left: 0; /*Margen de izquierda a derecha*/
 }
 
-.header-logo a{
-    display: block;
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    border: none;
-    transition: 0s;
+.header-logo {
+    display: inline-block; /*Convertir de contenedor en linea*/
+    margin: 6px 0 0 0; /*Margen*/
+    position: absolute; /*Permite que el siguiente elemento ocupe su espacio*/
+    top: 50%; /*Margen hacia arriba*/
+    left: 40px; /*Margen de de izquierda a derecha*/
 }
 
-.header-logo img{
-    width: 132px;
-    height: 36px;
-    margin: 0;
+.header-logo a {
+    display: block; /*Hacemos que el elemento sea un bloque*/
+    margin: 0; /*Margen de adentro hacia afuera*/
+    padding: 0; /*Margen de afuera hacia adentro */
+    outline: 0; /*Subrayado de las palabras*/
+    border: none; /*Sin borde*/
+    transition: 0s; /*Tiempo de transición*/
 }
 
-.header-nav-wrap{
-    display:inline-block ;
+.header-logo img {
+    width: 132px; /*Ancho que va a ocupar del casillero*/
+    height: 36px; /*Altura de la seccion*/
+    margin: 0; /*Margen*/
 }
 
-.header-nav-wrap ul{
-    display: inline-block;
-    list-style: none;
-    margin-left: 0;
-    margin-top: 18px;
+.header-nav-wrap {
+    display: inline-block; /*Convierte de contenedor a linea*/
 }
 
-.header-nav-wrap li{
-    display: inline-block;
+.header-nav-wrap ul {
+    display: inline-block; /*Convierte de contenedor a linea*/
+    list-style: none; /*Sin estilo de linea*/
+    margin-left: 0; /*Margen izquierdo*/
+    margin-top: 18px; /*Margen arriba*/
 }
-.header-nav-wrap li a{
-    display: block;
-    line-height: calc(78px -(18px*2));
+
+.header-nav-wrap li {
+    display: inline-block; /*Convierte de contenedor a linea*/
 }
+
+.header-nav-wrap li a {
+    display: block; /*Convertir en bloque*/
+    line-height: calc(78px -(18px*2)); /*Altura de letra - Mantener la proporcion*/
+}
+
+/*TAREA 2.3========================================================================================================*/
 
 .header-main-nav{
-    font-family: Edu+AU+VIC+WA+NT+Dot;
-    font-size: 13px;
-    text-transform: uppercase;
+    font-family: "Silkscreen"; /*Tpo de letra*/
+    font-size: 13px; /*Grosor de letra*/
+    text-transform: uppercase; /*Cambio de letra*/
+    letter-spacing: .3rem; /*Espacio entre las letras*/
+    color: rgba(255, 255, 255, 0.5) ; /*color*/
+    margin: 0 0 0 4px; /*Margen*/
+    z-index: 2; /*Controla la profundidad de los elementos*/
+    position: static; /*Posicion no cambian*/
+}
+
+.header-main-nav li{
+    margin: 0.2rem; /*Margen*/
+}
+
+.header-main-nav a{
+    color: rgba(255, 255, 255, 0.5);
+    position: relative; /*Permite que su espacio no sea ocupado por otro elmento*/
+}
+
+.header-main-nav a:hover,/*Efecto del cursor sobre la opcion*/
+.header-main-nav a:focus,/*Nombre del efecto*/
+.header-main-nav a:active { /*Activación del efecto*/
+    color: white
+}
+
+.header-main-nav .current a {
+    color: white;
+}
+
+.header-social {
+    font-size: 2rem; /*Grosor de la letra*/
+    margin: 0; /*Margen*/
+    position: absolute; /*Permite que otro elemnto ocupe su espacio al moverlo*/
+    top: 0px; /*Espacio hacia arriba*/
+    right: 40px; /*Espacio de derecha a izquierda*/
+}
+
+.header-social li{
+    margin-right: 1rem; /*Margen derecho*/
+}
+
+.header-socialli:last-child{
+    margin-right: 0px; /*Margen derecho*/
+}
+
+.header-social li a{
+    color: rgba(255, 255, 255, 0.5);
 }
